@@ -1,40 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Calculadora";
 }
 
 <div class="text-center">
     <h1 class="display-4">Calculadora</h1>
-</div>
 
-<div >
     <form method="post">
-        <input type="number" />
-        <br /><br />
-
-        <input type="submit" value=" 7 " />
-        <input type="submit" value=" 8 " />
-        <input type="submit" value=" 9 " />
-        <input type="submit" value=" : " />
-        <input type="submit" value="+/-" />
-        <br /><br />
-
-        <input type="submit" value=" 4 " />
-        <input type="submit" value=" 5 " />
-        <input type="submit" value=" 6 " />
-        <input type="submit" value=" x " />
-        <input type="submit" value=" c " />
-        <br /><br />
-
-        <input type="submit" value=" 1 " />
-        <input type="submit" value=" 2 " />
-        <input type="submit" value=" 3 " />
-        <input type="submit" value=" - " />
-        <input type="submit" value=" = " />
-        <br /><br />
-
-        <input type="submit" value="    " />
-        <input type="submit" value=" 0 " />
-        <input type="submit" value=" , " />
-        <input type="submit" value=" + " />
+        <table border="1">
+            <tr>
+                <td colspan="5">
+                    <input type="text" readonly="readonly" value="0" name="visor">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="7" name="num" class="btn"></input></td>
+                <td><input type="submit" value="8" name="num" class="btn"></input></td>
+                <td><input type="submit" value="9" name="num" class="btn"></input></td>
+                <td><input type="submit" value=":" name="num" class="btn"></input></td>
+                <td><input type="submit" value="+/-" name="num" class="btn"></input></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="4" name="num" class="btn"></input></td>
+                <td><input type="submit" value="5" name="num" class="btn"></input></td>
+                <td><input type="submit" value="6" name="num" class="btn"></input></td>
+                <td><input type="submit" value="x" name="num" class="btn"></input></td>
+                <td><input type="submit" value="c" name="num" class="btn"></input></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="1" name="num" class="btn"></input></td>
+                <td><input type="submit" value="2" name="num" class="btn"></input></td>
+                <td><input type="submit" value="3" name="num" class="btn"></input></td>
+                <td><input type="submit" value="-" name="num" class="btn"></input></td>
+                <td rowspan="2"><input type="submit" value="=" name="num" class=" = btn"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="0" name="num" class="btn"></input></td>
+                <td><input type="submit" value="," name="num" class="btn"></input></td>
+                <td><input type="submit" value="+" name="num" class="btn"></input></td>
+            </tr>
+        </table>
     </form>
 </div>

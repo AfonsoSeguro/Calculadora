@@ -23,7 +23,8 @@ namespace Calculadora.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Index(String visor, String num)
         {
             return View();
         }
