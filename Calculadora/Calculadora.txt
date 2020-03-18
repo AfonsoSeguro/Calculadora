@@ -1,0 +1,9 @@
+display da calculadora inicializa uma string a ""
+
+sempre que o utilizador clicar numa tecla concatena a string inicial o caracter dessa tecla de maneira a construir uma expressão
+
+se o utilizador clicar no +/-, concatena ao inicio da string o sinal "-" ou retira caso o mesmo sinal já la esteja
+
+se o utilizador clicar no "=" o servidor separa a string em 3, primeiro numero, sinal da operaçao, segundo numero, para os numeros usamos parseInt para converter para inteiros e o sinal para efectuar a operação
+
+colocamos a solução da operação no display da calculadora
