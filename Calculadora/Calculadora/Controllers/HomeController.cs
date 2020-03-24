@@ -26,7 +26,7 @@ namespace Calculadora.Controllers
         [HttpPost]
         public IActionResult Index(String visor, String num)
         {
-            return View();
+            return View(); 
         }
 
 
